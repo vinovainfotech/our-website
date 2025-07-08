@@ -17,7 +17,6 @@
                     <h1>Shiv Shakti Services</h1>
                     <p>By Karwal Group</p>
                 </div>
-                
                 <!-- Desktop Navigation -->
                 <nav class="nav-desktop">
                     <a href="index.html" class="nav-link active">Home</a>
@@ -42,7 +41,8 @@
                 <a href="address.html" class="nav-link">Address</a>
             </nav>
         </div>
-    </header>
+    </header>     
+              
 
     <!-- Hero Section -->
     <section class="hero">
@@ -122,24 +122,57 @@
 
                 <!-- SIP Calculator -->
                 <div id="sip-calculator" class="calculator">
-                    <h3>SIP Calculator</h3>
-                    <div class="calc-form">
-                        <div class="form-group">
-                            <label for="sip-amount">Monthly Investment (₹)</label>
-                            <input type="number" id="sip-amount" placeholder="Enter monthly SIP amount">
-                        </div>
-                        <div class="form-group">
-                            <label for="sip-rate">Expected Return (%)</label>
-                            <input type="number" id="sip-rate" step="0.01" placeholder="Enter expected annual return">
-                        </div>
-                        <div class="form-group">
-                            <label for="sip-tenure">Investment Period (years)</label>
-                            <input type="number" id="sip-tenure" placeholder="Enter investment period">
-                        </div>
-                        <button class="calc-submit" onclick="calculateSIP()">Calculate</button>
+                    <h3>SIP & Lumpsum Calculator</h3>
+                
+                    <!-- Toggle Buttons -->
+                    <div class="sip-toggle-buttons">
+                        <button id="monthlySipSubTabButton" onclick="showSipSubCalculator('monthly')" class="calc-sub-btn active">SIP Calculator</button>
+                        <button id="lumpsumSipSubTabButton" onclick="showSipSubCalculator('lumpsum')" class="calc-sub-btn">Lumpsum Calculator</button>
                     </div>
-                    <div class="calc-result" id="sip-result"></div>
+                
+                    <!-- Monthly SIP Form -->
+                    <div id="monthly-sip-form" class="sip-form active">
+                        <div class="calc-form">
+                            <div class="form-group">
+                                <label for="sip-amount">Monthly Investment (₹)</label>
+                                <input type="number" id="sip-amount" placeholder="Enter monthly SIP amount">
+                            </div>
+                            <div class="form-group">
+                                <label for="sip-rate">Expected Return (%)</label>
+                                <input type="number" id="sip-rate" step="0.01" placeholder="Enter expected annual return">
+                            </div>
+                            <div class="form-group">
+                                <label for="sip-tenure">Investment Period (years)</label>
+                                <input type="number" id="sip-tenure" placeholder="Enter investment period">
+                            </div>
+                            <button class="calc-submit" onclick="calculateSIP()">Calculate</button>
+                        </div>
+                        <div class="calc-result" id="sip-result"></div>
+                    </div>
+                
+                    <!-- Lumpsum Form -->
+                    <div id="lumpsum-form" class="sip-form">
+                        <div class="calc-form">
+                            <div class="form-group">
+                                <label for="lumpsum-amount">Total Investment (₹)</label>
+                                <input type="number" id="lumpsum-amount" placeholder="Enter Total Lumpsum amount">
+                            </div>
+                            <div class="form-group">
+                                <label for="lumpsum-rate">Expected Return Rate (%)</label>
+                                <input type="number" id="lumpsum-rate" step="0.01" placeholder="Enter expected annual return">
+                            </div>
+                            <div class="form-group">
+                                <label for="lumpsum-tenure">Time Period (years)</label>
+                                <input type="number" id="lumpsum-tenure" placeholder="Enter investment period">
+                            </div>
+                            <button class="calc-submit" onclick="calculateLumpsum()">Calculate</button>
+                        </div>
+                        <div class="calc-result" id="Lumpsum-result"></div>
+                    </div>
                 </div>
+                  
+
+                
 
                 <!-- SWP Calculator -->
                 <div id="swp-calculator" class="calculator">

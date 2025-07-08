@@ -6,9 +6,8 @@
     <title>Our Services - Shiv Shakti Services</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-</head>
+    </head>
 <body>
-     <!-- Header -->
     <header class="header">
         <div class="container">
             <div class="header-content">
@@ -17,7 +16,6 @@
                     <p>By Karwal Group</p>
                 </div>
                 
-                <!-- Desktop Navigation -->
                 <nav class="nav-desktop">
                     <a href="index.html" class="nav-link active">Home</a>
                     <a href="about.html" class="nav-link">About Us</a>
@@ -26,13 +24,11 @@
                     <a href="address.html" class="nav-link">Address</a>
                 </nav>
 
-                <!-- Mobile menu button -->
                 <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
                     <i class="fas fa-bars"></i>
                 </button>
             </div>
 
-            <!-- Mobile Navigation -->
             <nav class="nav-mobile" id="mobileNav">
                 <a href="index.html" class="nav-link">Home</a>
                 <a href="about.html" class="nav-link">About Us</a>
@@ -42,7 +38,6 @@
             </nav>
         </div>
     </header>
-    <!-- Services Content -->
     <section class="page-content">
         <div class="container">
             <div style="text-align: center; margin-bottom: 3rem;">
@@ -53,130 +48,192 @@
                 </p>
             </div>
 
-            <!-- Services Grid -->
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem; margin-bottom: 4rem;">
-                <div class="content-card" style="border-left: 4px solid #2563eb;">
-                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
-                        <i class="fas fa-shield-alt" style="font-size: 2rem; color: #2563eb;"></i>
-                        <h4 style="font-size: 1.25rem; font-weight: bold;">LIC Life Insurance</h4>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem;">
+                <div class="content-card" data-service="lic-life-insurance" style="border-left: 4px solid #2563eb;">
+                    <div class="service-content">
+                        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                            <i class="fas fa-shield-alt" style="font-size: 2rem; color: #2563eb;"></i>
+                            <h4 style="font-size: 1.25rem; font-weight: bold;">LIC Life Insurance</h4>
+                        </div>
+                        <p style="color: #6b7280; line-height: 1.6;">Comprehensive life insurance solutions to secure your family's future with guaranteed returns and life coverage.</p>
+                        <div class="toggle-docs-btn">View Documents <i class="fas fa-chevron-down"></i></div>
                     </div>
-                    <p style="color: #6b7280; line-height: 1.6;">Comprehensive life insurance solutions to secure your family's future with guaranteed returns and life coverage.</p>
+                    <div class="documents-overlay" id="docs-lic-life-insurance">
+                        </div>
                 </div>
 
-                <div class="content-card" style="border-left: 4px solid #16a34a;">
-                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
-                        <i class="fas fa-heartbeat" style="font-size: 2rem; color: #16a34a;"></i>
-                        <h4 style="font-size: 1.25rem; font-weight: bold;">Mediclaim</h4>
+                <div class="content-card" data-service="mediclaim" style="border-left: 4px solid #16a34a;">
+                    <div class="service-content">
+                        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                            <i class="fas fa-heartbeat" style="font-size: 2rem; color: #16a34a;"></i>
+                            <h4 style="font-size: 1.25rem; font-weight: bold;">Mediclaim</h4>
+                        </div>
+                        <p style="color: #6b7280; line-height: 1.6;">Health insurance plans to cover medical expenses and ensure quality healthcare for you and your family.</p>
+                        <div class="toggle-docs-btn">View Documents <i class="fas fa-chevron-down"></i></div>
                     </div>
-                    <p style="color: #6b7280; line-height: 1.6;">Health insurance plans to cover medical expenses and ensure quality healthcare for you and your family.</p>
+                    <div class="documents-overlay" id="docs-mediclaim"></div>
                 </div>
 
-                <div class="content-card" style="border-left: 4px solid #7c3aed;">
-                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
-                        <i class="fas fa-umbrella" style="font-size: 2rem; color: #7c3aed;"></i>
-                        <h4 style="font-size: 1.25rem; font-weight: bold;">General Insurance</h4>
+                <div class="content-card" data-service="general-insurance" style="border-left: 4px solid #7c3aed;">
+                    <div class="service-content">
+                        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                            <i class="fas fa-umbrella" style="font-size: 2rem; color: #7c3aed;"></i>
+                            <h4 style="font-size: 1.25rem; font-weight: bold;">General Insurance</h4>
+                        </div>
+                        <p style="color: #6b7280; line-height: 1.6;">Protect your assets with comprehensive general insurance coverage including motor, property, and travel insurance.</p>
+                        <div class="toggle-docs-btn">View Documents <i class="fas fa-chevron-down"></i></div>
                     </div>
-                    <p style="color: #6b7280; line-height: 1.6;">Protect your assets with comprehensive general insurance coverage including motor, property, and travel insurance.</p>
+                    <div class="documents-overlay" id="docs-general-insurance"></div>
                 </div>
 
-                <div class="content-card" style="border-left: 4px solid #ea580c;">
-                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
-                        <i class="fas fa-home" style="font-size: 2rem; color: #ea580c;"></i>
-                        <h4 style="font-size: 1.25rem; font-weight: bold;">Home Loan</h4>
+                <div class="content-card" data-service="home-loan" style="border-left: 4px solid #ea580c;">
+                    <div class="service-content">
+                        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                            <i class="fas fa-home" style="font-size: 2rem; color: #ea580c;"></i>
+                            <h4 style="font-size: 1.25rem; font-weight: bold;">Home Loan</h4>
+                        </div>
+                        <p style="color: #6b7280; line-height: 1.6;">Competitive home loan rates to help you purchase your dream home with flexible repayment options.</p>
+                        <div class="toggle-docs-btn">View Documents <i class="fas fa-chevron-down"></i></div>
                     </div>
-                    <p style="color: #6b7280; line-height: 1.6;">Competitive home loan rates to help you purchase your dream home with flexible repayment options.</p>
+                    <div class="documents-overlay" id="docs-home-loan"></div>
                 </div>
 
-                <div class="content-card" style="border-left: 4px solid #4f46e5;">
-                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
-                        <i class="fas fa-map-marked-alt" style="font-size: 2rem; color: #4f46e5;"></i>
-                        <h4 style="font-size: 1.25rem; font-weight: bold;">Plot Loan</h4>
+                <div class="content-card" data-service="plot-loan" style="border-left: 4px solid #4f46e5;">
+                    <div class="service-content">
+                        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                            <i class="fas fa-map-marked-alt" style="font-size: 2rem; color: #4f46e5;"></i>
+                            <h4 style="font-size: 1.25rem; font-weight: bold;">Plot Loan</h4>
+                        </div>
+                        <p style="color: #6b7280; line-height: 1.6;">Finance your land purchase with our plot loan solutions designed for residential and commercial plots.</p>
+                        <div class="toggle-docs-btn">View Documents <i class="fas fa-chevron-down"></i></div>
                     </div>
-                    <p style="color: #6b7280; line-height: 1.6;">Finance your land purchase with our plot loan solutions designed for residential and commercial plots.</p>
+                    <div class="documents-overlay" id="docs-plot-loan"></div>
                 </div>
 
-                <div class="content-card" style="border-left: 4px solid #dc2626;">
-                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
-                        <i class="fas fa-building" style="font-size: 2rem; color: #dc2626;"></i>
-                        <h4 style="font-size: 1.25rem; font-weight: bold;">Loan against Property</h4>
+                <div class="content-card" data-service="loan-against-property" style="border-left: 4px solid #dc2626;">
+                    <div class="service-content">
+                        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                            <i class="fas fa-building" style="font-size: 2rem; color: #dc2626;"></i>
+                            <h4 style="font-size: 1.25rem; font-weight: bold;">Loan against Property</h4>
+                        </div>
+                        <p style="color: #6b7280; line-height: 1.6;">Unlock the value of your property with loans against property at competitive interest rates.</p>
+                        <div class="toggle-docs-btn">View Documents <i class="fas fa-chevron-down"></i></div>
                     </div>
-                    <p style="color: #6b7280; line-height: 1.6;">Unlock the value of your property with loans against property at competitive interest rates.</p>
+                    <div class="documents-overlay" id="docs-loan-against-property"></div>
                 </div>
 
-                <div class="content-card" style="border-left: 4px solid #eab308;">
-                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
-                        <i class="fas fa-truck" style="font-size: 2rem; color: #eab308;"></i>
-                        <h4 style="font-size: 1.25rem; font-weight: bold;">Commercial Vehicle Loan</h4>
+                <div class="content-card" data-service="commercial-vehicle-loan" style="border-left: 4px solid #eab308;">
+                    <div class="service-content">
+                        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                            <i class="fas fa-truck" style="font-size: 2rem; color: #eab308;"></i>
+                            <h4 style="font-size: 1.25rem; font-weight: bold;">Commercial Vehicle Loan</h4>
+                        </div>
+                        <p style="color: #6b7280; line-height: 1.6;">Finance commercial vehicles for your business growth with easy EMI options and quick approval.</p>
+                        <div class="toggle-docs-btn">View Documents <i class="fas fa-chevron-down"></i></div>
                     </div>
-                    <p style="color: #6b7280; line-height: 1.6;">Finance commercial vehicles for your business growth with easy EMI options and quick approval.</p>
+                    <div class="documents-overlay" id="docs-commercial-vehicle-loan"></div>
                 </div>
 
-                <div class="content-card" style="border-left: 4px solid #3b82f6;">
-                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
-                        <i class="fas fa-car" style="font-size: 2rem; color: #3b82f6;"></i>
-                        <h4 style="font-size: 1.25rem; font-weight: bold;">Car Loans </h4>
+                <div class="content-card" data-service="car-loans" style="border-left: 4px solid #3b82f6;">
+                    <div class="service-content">
+                        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                            <i class="fas fa-car" style="font-size: 2rem; color: #3b82f6;"></i>
+                            <h4 style="font-size: 1.25rem; font-weight: bold;">Car Loans </h4>
+                        </div>
+                        <p style="color: #6b7280; line-height: 1.6;"> Get your dream car with our attractive and flexible car loan rates.</p>
+                        <div class="toggle-docs-btn">View Documents <i class="fas fa-chevron-down"></i></div>
                     </div>
-                    <p style="color: #6b7280; line-height: 1.6;"> Get your dream car with our attractive and flexible car loan rates.</p>
-                </div>
-                <div class="content-card" style="border-left: 4px solid #dc2626;">
-                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
-                        <i class="fas fa-car" style="font-size: 2rem; color: #dc2626;"></i>
-                        <h4 style="font-size: 1.25rem; font-weight: bold;">Car Loan Refinancing: </h4>
-                    </div>
-                    <p style="color: #6b7280; line-height: 1.6;"> Refinance your existing car loan to enjoy better interest rates and repayment terms.</p>
+                    <div class="documents-overlay" id="docs-car-loans"></div>
                 </div>
 
-                <div class="content-card" style="border-left: 4px solid #10b981;">
-                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
-                        <i class="fas fa-briefcase" style="font-size: 2rem; color: #10b981;"></i>
-                        <h4 style="font-size: 1.25rem; font-weight: bold;">Business Loan</h4>
+                <div class="content-card" data-service="car-loan-refinancing" style="border-left: 4px solid #dc2626;">
+                    <div class="service-content">
+                        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                            <i class="fas fa-car" style="font-size: 2rem; color: #dc2626;"></i>
+                            <h4 style="font-size: 1.25rem; font-weight: bold;">Car Loan Refinancing: </h4>
+                        </div>
+                        <p style="color: #6b7280; line-height: 1.6;"> Refinance your existing car loan to enjoy better interest rates and repayment terms.</p>
+                        <div class="toggle-docs-btn">View Documents <i class="fas fa-chevron-down"></i></div>
                     </div>
-                    <p style="color: #6b7280; line-height: 1.6;">Fuel your business growth with working capital loans, term loans, and business expansion financing.</p>
+                    <div class="documents-overlay" id="docs-car-loan-refinancing"></div>
                 </div>
 
-                <div class="content-card" style="border-left: 4px solid #8b5cf6;">
-                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
-                        <i class="fas fa-user-friends" style="font-size: 2rem; color: #8b5cf6;"></i>
-                        <h4 style="font-size: 1.25rem; font-weight: bold;">Personal Loan</h4>
+                <div class="content-card" data-service="business-loan" style="border-left: 4px solid #10b981;">
+                    <div class="service-content">
+                        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                            <i class="fas fa-briefcase" style="font-size: 2rem; color: #10b981;"></i>
+                            <h4 style="font-size: 1.25rem; font-weight: bold;">Business Loan</h4>
+                        </div>
+                        <p style="color: #6b7280; line-height: 1.6;">Fuel your business growth with working capital loans, term loans, and business expansion financing.</p>
+                        <div class="toggle-docs-btn">View Documents <i class="fas fa-chevron-down"></i></div>
                     </div>
-                    <p style="color: #6b7280; line-height: 1.6;">Meet your personal financial needs with unsecured personal loans at competitive rates.</p>
+                    <div class="documents-overlay" id="docs-business-loan"></div>
                 </div>
 
-                <div class="content-card" style="border-left: 4px solid #0d9488;">
-                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
-                        <i class="fas fa-city" style="font-size: 2rem; color: #0d9488;"></i>
-                        <h4 style="font-size: 1.25rem; font-weight: bold;">Estate Deals</h4>
+                <div class="content-card" data-service="personal-loan" style="border-left: 4px solid #8b5cf6;">
+                    <div class="service-content">
+                        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                            <i class="fas fa-user-friends" style="font-size: 2rem; color: #8b5cf6;"></i>
+                            <h4 style="font-size: 1.25rem; font-weight: bold;">Personal Loan</h4>
+                        </div>
+                        <p style="color: #6b7280; line-height: 1.6;">Meet your personal financial needs with unsecured personal loans at competitive rates.</p>
+                        <div class="toggle-docs-btn">View Documents <i class="fas fa-chevron-down"></i></div>
                     </div>
-                    <p style="color: #6b7280; line-height: 1.6;">Professional real estate consultation and deals to help you make informed property investment decisions.</p>
+                    <div class="documents-overlay" id="docs-personal-loan"></div>
                 </div>
 
-                <div class="content-card" style="border-left: 4px solid #92400e;">
-                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
-                        <i class="fas fa-hammer" style="font-size: 2rem; color: #92400e;"></i>
-                        <h4 style="font-size: 1.25rem; font-weight: bold;">Construction Loans</h4>
+                <div class="content-card" data-service="estate-deals" style="border-left: 4px solid #0d9488;">
+                    <div class="service-content">
+                        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                            <i class="fas fa-city" style="font-size: 2rem; color: #0d9488;"></i>
+                            <h4 style="font-size: 1.25rem; font-weight: bold;">Estate Deals</h4>
+                        </div>
+                        <p style="color: #6b7280; line-height: 1.6;">Professional real estate consultation and deals to help you make informed property investment decisions.</p>
+                        <div class="toggle-docs-btn">View Documents <i class="fas fa-chevron-down"></i></div>
                     </div>
-                    <p style="color: #6b7280; line-height: 1.6;">Finance your construction projects with flexible construction loan options and staged disbursements.</p>
+                    <div class="documents-overlay" id="docs-estate-deals"></div>
                 </div>
 
-                <div class="content-card" style="border-left: 4px solid #6b7280;">
-                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
-                        <i class="fas fa-file-invoice-dollar" style="font-size: 2rem; color: #6b7280;"></i>
-                        <h4 style="font-size: 1.25rem; font-weight: bold;">ITR Taxation</h4>
+                <div class="content-card" data-service="construction-loans" style="border-left: 4px solid #92400e;">
+                    <div class="service-content">
+                        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                            <i class="fas fa-hammer" style="font-size: 2rem; color: #92400e;"></i>
+                            <h4 style="font-size: 1.25rem; font-weight: bold;">Construction Loans</h4>
+                        </div>
+                        <p style="color: #6b7280; line-height: 1.6;">Finance your construction projects with flexible construction loan options and staged disbursements.</p>
+                        <div class="toggle-docs-btn">View Documents <i class="fas fa-chevron-down"></i></div>
                     </div>
-                    <p style="color: #6b7280; line-height: 1.6;">Complete income tax return filing services and tax planning consultation by certified professionals.</p>
+                    <div class="documents-overlay" id="docs-construction-loans"></div>
                 </div>
 
-                <div class="content-card" style="border-left: 4px solid #0891b2;">
-                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
-                        <i class="fas fa-calculator" style="font-size: 2rem; color: #0891b2;"></i>
-                        <h4 style="font-size: 1.25rem; font-weight: bold;">A/C Writing</h4>
+                <div class="content-card" data-service="itr-taxation" style="border-left: 4px solid #6b7280;">
+                    <div class="service-content">
+                        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                            <i class="fas fa-file-invoice-dollar" style="font-size: 2rem; color: #6b7280;"></i>
+                            <h4 style="font-size: 1.25rem; font-weight: bold;">ITR Taxation</h4>
+                        </div>
+                        <p style="color: #6b7280; line-height: 1.6;">Complete income tax return filing services and tax planning consultation by certified professionals.</p>
+                        <div class="toggle-docs-btn">View Documents <i class="fas fa-chevron-down"></i></div>
                     </div>
-                    <p style="color: #6b7280; line-height: 1.6;">Professional accounting and bookkeeping services to maintain accurate financial records for your business.</p>
+                    <div class="documents-overlay" id="docs-itr-taxation"></div>
+                </div>
+
+                <div class="content-card" data-service="ac-writing" style="border-left: 4px solid #0891b2;">
+                    <div class="service-content">
+                        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                            <i class="fas fa-calculator" style="font-size: 2rem; color: #0891b2;"></i>
+                            <h4 style="font-size: 1.25rem; font-weight: bold;">A/C Writing</h4>
+                        </div>
+                        <p style="color: #6b7280; line-height: 1.6;">Professional accounting and bookkeeping services to maintain accurate financial records for your business.</p>
+                        <div class="toggle-docs-btn">View Documents <i class="fas fa-chevron-down"></i></div>
+                    </div>
+                    <div class="documents-overlay" id="docs-ac-writing"></div>
                 </div>
             </div>
 
-            <!-- Why Choose Us -->
-            <div class="content-card" style="background: linear-gradient(135deg, #2563eb 0%, #4f46e5 100%); color: white; margin-bottom: 4rem;">
+            ---
+
+            <div class="content-card" style="background: linear-gradient(135deg, #2563eb 0%, #4f46e5 100%); color: white; margin-bottom: 4rem; margin-top: 4rem;">
                 <h3 style="font-size: 2rem; text-align: center; margin-bottom: 2rem; color: white;">Why Choose Shiv Shakti Services?</h3>
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; text-align: center;">
                     <div>
@@ -198,7 +255,8 @@
                 </div>
             </div>
 
-            <!-- CTA Section -->
+            ---
+
             <div style="text-align: center;">
                 <h3 style="font-size: 1.5rem; font-weight: bold; color: #1f2937; margin-bottom: 1.5rem;">Ready to Get Started?</h3>
                 <p style="color: #6b7280; margin-bottom: 2rem; max-width: 32rem; margin-left: auto; margin-right: auto;">
@@ -212,6 +270,6 @@
         </div>
     </section>
 
-    <script src="script.js"></script>
+    <script src="script.js"></script> 
 </body>
 </html>
